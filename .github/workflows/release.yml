@@ -1,4 +1,4 @@
-name: 'C++ CI'
+name: 'C++ CI Homework 2'
 
 on:
   push:
