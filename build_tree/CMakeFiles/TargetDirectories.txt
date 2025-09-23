@@ -1,0 +1,11 @@
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/ip_filter.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/ip_filter_test.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/package.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/package_source.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/test.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/edit_cache.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/rebuild_cache.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/list_install_components.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/install.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/install/local.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/install/strip.dir
