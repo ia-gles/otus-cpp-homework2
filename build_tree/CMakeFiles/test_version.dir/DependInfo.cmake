@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ilyas/github/otus-cpp-homework2/test_version.cpp" "CMakeFiles/ip_filter_test.dir/test_version.cpp.o" "gcc" "CMakeFiles/ip_filter_test.dir/test_version.cpp.o.d"
-  "" "ip_filter_test" "gcc" "CMakeFiles/ip_filter_test.dir/link.d"
+  "/home/ilyas/github/otus-cpp-homework2/test_version.cpp" "CMakeFiles/test_version.dir/test_version.cpp.o" "gcc" "CMakeFiles/test_version.dir/test_version.cpp.o.d"
+  "" "test_version" "gcc" "CMakeFiles/test_version.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

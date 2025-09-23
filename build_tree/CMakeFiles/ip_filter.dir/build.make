@@ -96,6 +96,7 @@ ip_filter_EXTERNAL_OBJECTS =
 ip_filter: CMakeFiles/ip_filter.dir/ip_filter.cpp.o
 ip_filter: CMakeFiles/ip_filter.dir/build.make
 ip_filter: CMakeFiles/ip_filter.dir/compiler_depend.ts
+ip_filter: liblib_ip_filter.a
 ip_filter: CMakeFiles/ip_filter.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ip_filter"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ip_filter.dir/link.txt --verbose=$(VERBOSE)

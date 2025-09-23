@@ -1,2 +1,2 @@
-# Empty dependencies file for ip_filter_test.
+# Empty dependencies file for lib_ip_filter.
 # This may be replaced when dependencies are built.

@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/ip_filter.dir/link.d CMakeFiles/ip_filter.dir/ip_filter.cpp.o -o ip_filter
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/ip_filter.dir/link.d CMakeFiles/ip_filter.dir/ip_filter.cpp.o -o ip_filter  liblib_ip_filter.a

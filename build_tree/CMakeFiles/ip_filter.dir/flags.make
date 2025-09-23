@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/ilyas/github/otus-cpp-homework2/build_tree
 
 CXX_FLAGS = -std=gnu++17 -Wall -Wextra -pedantic -Werror
 

@@ -1,3 +1,4 @@
+#include <tuple>
 #include <cassert>
 #include <cstdlib>
 #include <iostream>
@@ -33,6 +34,8 @@ std::vector<std::string> split(const std::string &str, char d)
 
 int main(int argc, char const *argv[])
 {
+    std::ignore = argc;
+    std::ignore = argv;
     try
     {
         std::vector<std::vector<std::string> > ip_pool;

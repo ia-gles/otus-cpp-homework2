@@ -1,5 +1,6 @@
 /home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/ip_filter.dir
-/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/ip_filter_test.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/lib_ip_filter.dir
+/home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/test_version.dir
 /home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/package.dir
 /home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/package_source.dir
 /home/ilyas/github/otus-cpp-homework2/build_tree/CMakeFiles/test.dir
