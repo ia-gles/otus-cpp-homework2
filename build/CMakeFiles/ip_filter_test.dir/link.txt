@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ip_filter_test.dir/link.d CMakeFiles/ip_filter_test.dir/test_version.cpp.o -o ip_filter_test  /usr/lib/x86_64-linux-gnu/libboost_unit_test_framework.so.1.83.0 libip_filter_lib.a

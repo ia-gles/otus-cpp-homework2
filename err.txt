@@ -1,0 +1,169 @@
+[ 33%] Built target ip_filter_lib
+[ 50%] Building CXX object CMakeFiles/ip_filter.dir/main.cpp.o
+In file included from /home/ilyas/github/otus-cpp-homework2/main.cpp:10:
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:15:5: error: expected unqualified-id before ‘if’
+   15 |     if constexpr (Ver == IPv4_SIZE) {
+      |     ^~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:18:5: error: expected unqualified-id before ‘else’
+   18 |     else if constexpr (Ver == IPv6_SIZE)
+      |     ^~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:22:5: error: expected unqualified-id before ‘else’
+   22 |     else
+      |     ^~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp: In constructor ‘IP<Ver>::IP(char*)’:
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:37:40: error: ‘addr’ was not declared in this scope
+   37 |                 for (size_t i = 0; i < addr.size(); ++i) {
+      |                                        ^~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:51:40: error: ‘addr’ was not declared in this scope
+   51 |                 for (size_t i = 0; i < addr.size() / 2; ++i) {
+      |                                        ^~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp: In constructor ‘IP<Ver>::IP(std::vector<std::__cxx11::basic_string<char> >)’:
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:78:21: error: ‘addr’ was not declared in this scope
+   78 |                     addr.at(i) = ip_part;
+      |                     ^~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:85:28: error: ‘ip_address_string’ was not declared in this scope
+   85 |                 if (strlen(ip_address_string) < 256) std::cerr << " : " << ip_address_string;
+      |                            ^~~~~~~~~~~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:111:21: error: ‘addr’ was not declared in this scope
+  111 |                     addr.at(i) = ip_part;
+      |                     ^~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:118:28: error: ‘ip_address_string’ was not declared in this scope
+  118 |                 if (strlen(ip_address_string) < 256) std::cerr << " : " << ip_address_string;
+      |                            ^~~~~~~~~~~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp: In member function ‘std::size_t IP<Ver>::getVersion()’:
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:126:16: error: ‘addr’ was not declared in this scope
+  126 |         return addr.size();
+      |                ^~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp: In member function ‘std::array<unsigned char, Ver> IP<Ver>::getAddr()’:
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:131:16: error: ‘addr’ was not declared in this scope
+  131 |         return addr;
+      |                ^~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp: In member function ‘bool IP<Ver>::operator<(const IP<Ver>*) const’:
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:136:24: error: ‘addr’ was not declared in this scope
+  136 |         for (auto it = addr.begin(), other_it = other_addr->getAddr().begin(); it != addr.end(); ++it, ++other_it)
+      |                        ^~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:136:106: error: ‘other_it’ was not declared in this scope
+  136 |         for (auto it = addr.begin(), other_it = other_addr->getAddr().begin(); it != addr.end(); ++it, ++other_it)
+      |                                                                                                          ^~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp: In member function ‘bool IP<Ver>::reverse_less_then(const IP<Ver>*) const’:
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:151:24: error: ‘addr’ was not declared in this scope
+  151 |         for (auto it = addr.begin(), other_it = other_addr->getAddr().begin(); it != addr.end(); ++it, ++other_it)
+      |                        ^~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:151:106: error: ‘other_it’ was not declared in this scope
+  151 |         for (auto it = addr.begin(), other_it = other_addr->getAddr().begin(); it != addr.end(); ++it, ++other_it)
+      |                                                                                                          ^~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp: In instantiation of ‘bool IP<Ver>::reverse_less_then(const IP<Ver>*) const [with long unsigned int Ver = 4]’:
+/home/ilyas/github/otus-cpp-homework2/main.cpp:60:84:   required from here
+   60 |             bool operator()(IP<4> *a, IP<4> *b) const { return a->reverse_less_then(b); }
+      |                                                                ~~~~~~~~~~~~~~~~~~~~^~~
+/home/ilyas/github/otus-cpp-homework2/IP.hpp:149:38: error: unused parameter ‘other_addr’ [-Werror=unused-parameter]
+  149 |     bool reverse_less_then(const IP* other_addr) const
+      |                            ~~~~~~~~~~^~~~~~~~~~
+In file included from /usr/include/c++/14/bits/stl_algobase.h:71,
+                 from /usr/include/c++/14/deque:62,
+                 from /usr/include/c++/14/queue:62,
+                 from /home/ilyas/github/otus-cpp-homework2/main.cpp:1:
+/usr/include/c++/14/bits/predefined_ops.h: In instantiation of ‘constexpr bool __gnu_cxx::__ops::_Iter_comp_iter<_Compare>::operator()(_Iterator1, _Iterator2) [with _Iterator1 = __gnu_cxx::__normal_iterator<IP<4>*, std::vector<IP<4> > >; _Iterator2 = __gnu_cxx::__normal_iterator<IP<4>*, std::vector<IP<4> > >; _Compare = main(int, char**)::<unnamed struct>]’:
+/usr/include/c++/14/bits/stl_algo.h:1777:14:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+ 1777 |           if (__comp(__i, __first))
+      |               ~~~~~~^~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:1817:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+ 1817 |           std::__insertion_sort(__first, __first + int(_S_threshold), __comp);
+      |           ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:1908:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+ 1908 |           std::__final_insertion_sort(__first, __last, __comp);
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:4805:18:   required from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = main(int, char**)::<unnamed struct>]’
+ 4805 |       std::__sort(__first, __last, __gnu_cxx::__ops::__iter_comp_iter(__comp));
+      |       ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/main.cpp:64:18:   required from here
+   64 |         std::sort(ip_pool.begin(), ip_pool.end(), reverseLexicographically);
+      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/predefined_ops.h:158:30: error: no match for call to ‘(main(int, char**)::<unnamed struct>) (IP<4>&, IP<4>&)’
+  158 |         { return bool(_M_comp(*__it1, *__it2)); }
+      |                       ~~~~~~~^~~~~~~~~~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/main.cpp:60:18: note: candidate: ‘bool main(int, char**)::<unnamed struct>::operator()(IP<4>*, IP<4>*) const’
+   60 |             bool operator()(IP<4> *a, IP<4> *b) const { return a->reverse_less_then(b); }
+      |                  ^~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/main.cpp:60:36: note:   no known conversion for argument 1 from ‘IP<4>’ to ‘IP<4>*’
+   60 |             bool operator()(IP<4> *a, IP<4> *b) const { return a->reverse_less_then(b); }
+      |                             ~~~~~~~^
+/usr/include/c++/14/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Val_comp_iter<_Compare>::operator()(_Value&, _Iterator) [with _Value = IP<4>; _Iterator = __gnu_cxx::__normal_iterator<IP<4>*, std::vector<IP<4> > >; _Compare = main(int, char**)::<unnamed struct>]’:
+/usr/include/c++/14/bits/stl_algo.h:1757:20:   required from ‘void std::__unguarded_linear_insert(_RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = __gnu_cxx::__ops::_Val_comp_iter<main(int, char**)::<unnamed struct> >]’
+ 1757 |       while (__comp(__val, __next))
+      |              ~~~~~~^~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:1785:36:   required from ‘void std::__insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+ 1785 |             std::__unguarded_linear_insert(__i,
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+ 1786 |                                 __gnu_cxx::__ops::__val_comp_iter(__comp));
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:1817:25:   required from ‘void std::__final_insertion_sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+ 1817 |           std::__insertion_sort(__first, __first + int(_S_threshold), __comp);
+      |           ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:1908:31:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+ 1908 |           std::__final_insertion_sort(__first, __last, __comp);
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:4805:18:   required from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = main(int, char**)::<unnamed struct>]’
+ 4805 |       std::__sort(__first, __last, __gnu_cxx::__ops::__iter_comp_iter(__comp));
+      |       ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/main.cpp:64:18:   required from here
+   64 |         std::sort(ip_pool.begin(), ip_pool.end(), reverseLexicographically);
+      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/predefined_ops.h:240:30: error: no match for call to ‘(main(int, char**)::<unnamed struct>) (IP<4>&, IP<4>&)’
+  240 |         { return bool(_M_comp(__val, *__it)); }
+      |                       ~~~~~~~^~~~~~~~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/main.cpp:60:18: note: candidate: ‘bool main(int, char**)::<unnamed struct>::operator()(IP<4>*, IP<4>*) const’
+   60 |             bool operator()(IP<4> *a, IP<4> *b) const { return a->reverse_less_then(b); }
+      |                  ^~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/main.cpp:60:36: note:   no known conversion for argument 1 from ‘IP<4>’ to ‘IP<4>*’
+   60 |             bool operator()(IP<4> *a, IP<4> *b) const { return a->reverse_less_then(b); }
+      |                             ~~~~~~~^
+/usr/include/c++/14/bits/predefined_ops.h: In instantiation of ‘bool __gnu_cxx::__ops::_Iter_comp_val<_Compare>::operator()(_Iterator, _Value&) [with _Iterator = __gnu_cxx::__normal_iterator<IP<4>*, std::vector<IP<4> > >; _Value = IP<4>; _Compare = main(int, char**)::<unnamed struct>]’:
+/usr/include/c++/14/bits/stl_heap.h:140:48:   required from ‘void std::__push_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Distance = long int; _Tp = IP<4>; _Compare = __gnu_cxx::__ops::_Iter_comp_val<main(int, char**)::<unnamed struct> >]’
+  140 |       while (__holeIndex > __topIndex && __comp(__first + __parent, __value))
+      |                                          ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_heap.h:247:23:   required from ‘void std::__adjust_heap(_RandomAccessIterator, _Distance, _Distance, _Tp, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Distance = long int; _Tp = IP<4>; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+  247 |       std::__push_heap(__first, __holeIndex, __topIndex,
+      |       ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  248 |                        _GLIBCXX_MOVE(__value), __cmp);
+      |                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_heap.h:356:22:   required from ‘void std::__make_heap(_RandomAccessIterator, _RandomAccessIterator, _Compare&) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+  356 |           std::__adjust_heap(__first, __parent, __len, _GLIBCXX_MOVE(__value),
+      |           ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  357 |                              __comp);
+      |                              ~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:1593:23:   required from ‘void std::__heap_select(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+ 1593 |       std::__make_heap(__first, __middle, __comp);
+      |       ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:1868:25:   required from ‘void std::__partial_sort(_RandomAccessIterator, _RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+ 1868 |       std::__heap_select(__first, __middle, __last, __comp);
+      |       ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:1884:27:   required from ‘void std::__introsort_loop(_RandomAccessIterator, _RandomAccessIterator, _Size, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Size = long int; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+ 1884 |               std::__partial_sort(__first, __last, __last, __comp);
+      |               ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:1905:25:   required from ‘void std::__sort(_RandomAccessIterator, _RandomAccessIterator, _Compare) [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = __gnu_cxx::__ops::_Iter_comp_iter<main(int, char**)::<unnamed struct> >]’
+ 1905 |           std::__introsort_loop(__first, __last,
+      |           ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+ 1906 |                                 std::__lg(__last - __first) * 2,
+      |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ 1907 |                                 __comp);
+      |                                 ~~~~~~~
+/usr/include/c++/14/bits/stl_algo.h:4805:18:   required from ‘void std::sort(_RAIter, _RAIter, _Compare) [with _RAIter = __gnu_cxx::__normal_iterator<IP<4>*, vector<IP<4> > >; _Compare = main(int, char**)::<unnamed struct>]’
+ 4805 |       std::__sort(__first, __last, __gnu_cxx::__ops::__iter_comp_iter(__comp));
+      |       ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/main.cpp:64:18:   required from here
+   64 |         std::sort(ip_pool.begin(), ip_pool.end(), reverseLexicographically);
+      |         ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/predefined_ops.h:196:30: error: no match for call to ‘(main(int, char**)::<unnamed struct>) (IP<4>&, IP<4>&)’
+  196 |         { return bool(_M_comp(*__it, __val)); }
+      |                       ~~~~~~~^~~~~~~~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/main.cpp:60:18: note: candidate: ‘bool main(int, char**)::<unnamed struct>::operator()(IP<4>*, IP<4>*) const’
+   60 |             bool operator()(IP<4> *a, IP<4> *b) const { return a->reverse_less_then(b); }
+      |                  ^~~~~~~~
+/home/ilyas/github/otus-cpp-homework2/main.cpp:60:36: note:   no known conversion for argument 1 from ‘IP<4>’ to ‘IP<4>*’
+   60 |             bool operator()(IP<4> *a, IP<4> *b) const { return a->reverse_less_then(b); }
+      |                             ~~~~~~~^
+cc1plus: all warnings being treated as errors
+gmake[2]: *** [CMakeFiles/ip_filter.dir/build.make:79: CMakeFiles/ip_filter.dir/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:93: CMakeFiles/ip_filter.dir/all] Error 2
+gmake: *** [Makefile:166: all] Error 2

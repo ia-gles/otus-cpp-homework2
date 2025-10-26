@@ -1,13 +1,8 @@
-#include <queue>
-#include <vector>
 #include <cassert>
 #include <cstdlib>
 #include <iostream>
 #include <string>
-#include <algorithm>
-
-#include "lib.h"
-#include "IP.hpp"
+#include <vector>
 
 // ("",  '.') -> [""]
 // ("11", '.') -> ["11"]
@@ -34,62 +29,33 @@ std::vector<std::string> split(const std::string &str, char d)
     return r;
 }
 
-int main(int, char **) {
-
-    //ip_list.push_back(*(new IP<4>(c)));
-    //std::cout << (*ip_list.begin()).getVersion() << "\n";
-    
+int main(int argc, char const *argv[])
+{
     try
     {
-        std::vector<IP<4>> ip_pool;
+        std::vector<std::vector<std::string> > ip_pool;
 
         for(std::string line; std::getline(std::cin, line);)
         {
             std::vector<std::string> v = split(line, '\t');
-
-            std::vector<std::string> ip_strings = split(v.at(0), '.');
-            IP<4> *ip = new IP<4>(ip_strings);
-
-            ip_pool.push_back(*ip);
+            ip_pool.push_back(split(v.at(0), '.'));
         }
 
         // TODO reverse lexicographically sort
-    
-        struct
+
+        for(std::vector<std::vector<std::string> >::const_iterator ip = ip_pool.cbegin(); ip != ip_pool.cend(); ++ip)
         {
-            bool operator()(const IP<4>& a, const IP<4>& b) const { return a.reverse_less_then(b); }
+            for(std::vector<std::string>::const_iterator ip_part = ip->cbegin(); ip_part != ip->cend(); ++ip_part)
+            {
+                if (ip_part != ip->cbegin())
+                {
+                    std::cout << ".";
+
+                }
+                std::cout << *ip_part;
+            }
+            std::cout << std::endl;
         }
-        reverseLexicographically;
-
-        std::sort(ip_pool.begin(), ip_pool.end(), reverseLexicographically);
-
-        std::vector<IP<4>> ip_pool_1;
-        std::vector<IP<4>> ip_pool_46_70;
-        std::vector<IP<4>> ip_pool_any_46;
-
-        for (auto it = ip_pool.begin(); it != ip_pool.end(); ++it)
-        {
-            std::cout << it->getAddr().at(0) << "." << it->getAddr().at(1) << "." << it->getAddr().at(2) << "." << it->getAddr().at(3) << "\n";
-            if (it->comparePart(0, 1)) ip_pool_1.push_back(*it);
-            if (it->comparePart(0, 46) && it->comparePart(1, 70)) ip_pool_46_70.push_back(*it);
-            if (it->comparePart(46)) ip_pool_any_46.push_back(*it);
-        }
-
-        for (auto it = ip_pool_1.begin(); it != ip_pool_1.end(); ++it)
-        {
-            std::cout << it->getAddr().at(0) << "." << it->getAddr().at(1) << "." << it->getAddr().at(2) << "." << it->getAddr().at(3) << "\n";
-        }
-
-        for (auto it = ip_pool_46_70.begin(); it != ip_pool_46_70.end(); ++it)
-        {
-            std::cout << it->getAddr().at(0) << "." << it->getAddr().at(1) << "." << it->getAddr().at(2) << "." << it->getAddr().at(3) << "\n";
-        }
-
-        for (auto it = ip_pool_any_46.begin(); it != ip_pool_any_46.end(); ++it)
-        {
-            std::cout << it->getAddr().at(0) << "." << it->getAddr().at(1) << "." << it->getAddr().at(2) << "." << it->getAddr().at(3) << "\n";
-        }        
-
 
         // 222.173.235.246
         // 222.130.177.64

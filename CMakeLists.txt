@@ -9,11 +9,11 @@ option(WITH_BOOST_TEST "Whether to build Boost test" ON)
 
 configure_file(version.h.in version.h)
 
-add_executable(ip_filter main.cpp)
+add_executable(ip_filter IP.hpp main.cpp)
 add_library(ip_filter_lib lib.cpp)
 
 set_target_properties(ip_filter ip_filter_lib PROPERTIES
-    CXX_STANDARD 14
+    CXX_STANDARD 17
     CXX_STANDARD_REQUIRED ON
 )
 
@@ -30,7 +30,7 @@ if(WITH_BOOST_TEST)
     add_executable(ip_filter_test test_version.cpp)
 
     set_target_properties(ip_filter_test PROPERTIES
-        CXX_STANDARD 14
+        CXX_STANDARD 17
         CXX_STANDARD_REQUIRED ON
     )
 
