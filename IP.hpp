@@ -83,11 +83,11 @@ class IP {
         {
             if (ip_strings.size() <= IPv6_SIZE)
             {
-                for (size_t i = IPv6_SIZE - 1; i >= 0; --i)
+                for (int i = IPv6_SIZE - 1; i >= 0; --i)
                 {
                     int ip_part;
 
-                    if (ip_strings.at(i).empty() || i > ip_strings.size() - 1)
+                    if (static_cast<std::size_t>(i) > ip_strings.size() - 1 || ip_strings.at(i).empty())
                     {
                         ip_part = 0;
                     } 
@@ -97,7 +97,8 @@ class IP {
                     }
 
                     if (!(ip_part >= 0 && ip_part < 65536)) {
-                        throw std::invalid_argument( "Invalid IPv6 address part");
+                        std::cout << "Invalid IPv6 address part\n";
+                        throw std::invalid_argument("Invalid IPv6 address part");
                     }
                     
                     addr.at(i) = ip_part;
