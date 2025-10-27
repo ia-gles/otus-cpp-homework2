@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20251027-0412-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.31.6"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="kali-ya"
+	OSRelease="6.12.25-amd64"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Kali 6.12.25-1kali1 (2025-04-30)"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="154"
+	ModelName="12th Gen Intel(R) Core(TM) i7-12650H"
+	ProcessorCacheSize="24576"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="10"
+	TotalVirtualMemory="1815"
+	TotalPhysicalMemory="15702"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="3846.03"
+	>
+	<Testing>
+		<StartDateTime>Oct 27 11:17 +06</StartDateTime>
+		<StartTestTime>1761542250</StartTestTime>
+		<TestList/>
+		<EndDateTime>Oct 27 11:17 +06</EndDateTime>
+		<EndTestTime>1761542250</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

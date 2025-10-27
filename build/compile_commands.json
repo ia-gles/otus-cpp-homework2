@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/ilyas/github/otus-cpp-homework2/build",
+  "command": "/usr/bin/g++-14 -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -pedantic -Werror -o CMakeFiles/ip_filter.dir/main.cpp.o -c /home/ilyas/github/otus-cpp-homework2/main.cpp",
+  "file": "/home/ilyas/github/otus-cpp-homework2/main.cpp",
+  "output": "CMakeFiles/ip_filter.dir/main.cpp.o"
+},
+{
+  "directory": "/home/ilyas/github/otus-cpp-homework2/build",
+  "command": "/usr/bin/g++-14 -I/home/ilyas/github/otus-cpp-homework2/build -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -pedantic -Werror -o CMakeFiles/ip_filter_lib.dir/lib.cpp.o -c /home/ilyas/github/otus-cpp-homework2/lib.cpp",
+  "file": "/home/ilyas/github/otus-cpp-homework2/lib.cpp",
+  "output": "CMakeFiles/ip_filter_lib.dir/lib.cpp.o"
+},
+{
+  "directory": "/home/ilyas/github/otus-cpp-homework2/build",
+  "command": "/usr/bin/g++-14 -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -pedantic -Werror -o CMakeFiles/ip_filter_test.dir/test_version.cpp.o -c /home/ilyas/github/otus-cpp-homework2/test_version.cpp",
+  "file": "/home/ilyas/github/otus-cpp-homework2/test_version.cpp",
+  "output": "CMakeFiles/ip_filter_test.dir/test_version.cpp.o"
+}
+]

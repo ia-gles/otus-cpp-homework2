@@ -11,7 +11,7 @@
 
 
 set(CPACK_BUILD_SOURCE_DIRS "/home/ilyas/github/otus-cpp-homework2;/home/ilyas/github/otus-cpp-homework2/build")
-set(CPACK_CMAKE_GENERATOR "Unix Makefiles")
+set(CPACK_CMAKE_GENERATOR "Ninja")
 set(CPACK_COMPONENT_UNSPECIFIED_HIDDEN "TRUE")
 set(CPACK_COMPONENT_UNSPECIFIED_REQUIRED "TRUE")
 set(CPACK_DEFAULT_PACKAGE_DESCRIPTION_FILE "/usr/share/cmake-3.31/Templates/CPack.GenericDescription.txt")

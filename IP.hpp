@@ -104,12 +104,18 @@ class IP {
                 }
             }
             else 
-            {
-                //throw std::invalid_argument( "Invalid IP address: ", ip_address_string);
+            {                
                 std::cerr << "Invalid IPv6 address";            
                 std::cerr << "\n";
+                throw std::invalid_argument("Invalid IP address");
             }                                    
-        }        
+        }
+        else 
+        {                
+            std::cerr << "Invalid IP address format";            
+            std::cerr << "\n";
+            throw std::invalid_argument("Invalid IP address format");
+        }                
     }
 
     std::size_t getVersion()
