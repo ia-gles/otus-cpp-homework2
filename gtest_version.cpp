@@ -9,7 +9,10 @@
 
 // Demonstrate some basic assertions.
 TEST(HelloTest, BasicAssertions) {
-  EXPECT_GT(version(), 0);
+	EXPECT_GT(version(), 0);
+}
+
+TEST(IPTest, BasicAssertions) {
 
 	const std::size_t size0 = 0;
 	const std::size_t size1 = 4;
@@ -29,10 +32,10 @@ TEST(HelloTest, BasicAssertions) {
 	std::vector<std::string> s8{"111", "aaa", "111", "111"};
 	std::vector<std::string> s9{"111", "", "-111", "1a1"};
 	
-	EXPECT_THROW(new IP<size0>(normal), std::invalid_argument);
-	EXPECT_NO_THROW(new IP<size1>(normal));
-	EXPECT_NO_THROW(new IP<size2>(normal16));
-	EXPECT_THROW(new IP<size3>(normal), std::invalid_argument);
+	EXPECT_THROW(new IP<size0>(normal), std::invalid_argument) << "size0 failed!";
+	EXPECT_NO_THROW(new IP<size1>(normal)) << "size1 failed!";
+	EXPECT_NO_THROW(new IP<size2>(normal16)) << "size2 failed!";
+	EXPECT_THROW(new IP<size3>(normal), std::invalid_argument) << "size3 failed!";
 
 	EXPECT_THROW(new IP<size1>(s1), std::invalid_argument);
 	EXPECT_THROW(new IP<size1>(s2), std::invalid_argument);

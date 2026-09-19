@@ -106,15 +106,15 @@ class IP {
             }
             else 
             {                
-                std::cerr << "Invalid IPv6 address";            
-                std::cerr << "\n";
+                std::cerr << "Invalid IPv6 address\n";            
+                //std::cerr << "\n";
                 throw std::invalid_argument("Invalid IP address");
             }                                    
         }
         else 
         {                
-            std::cerr << "Invalid IP address format";            
-            std::cerr << "\n";
+            std::cerr << "Invalid IP address format\n";            
+            //std::cerr << "\n";
             throw std::invalid_argument("Invalid IP address format");
         }                
     }
