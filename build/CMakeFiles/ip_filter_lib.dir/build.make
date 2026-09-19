@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ilyas/github/otus-cpp-homework2
+CMAKE_SOURCE_DIR = /home/ilyas/OTUS/otus-cpp-homework2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ilyas/github/otus-cpp-homework2/build
+CMAKE_BINARY_DIR = /home/ilyas/OTUS/otus-cpp-homework2/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ip_filter_lib.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/ip_filter_lib.dir/codegen:
 .PHONY : CMakeFiles/ip_filter_lib.dir/codegen
 
 CMakeFiles/ip_filter_lib.dir/lib.cpp.o: CMakeFiles/ip_filter_lib.dir/flags.make
-CMakeFiles/ip_filter_lib.dir/lib.cpp.o: /home/ilyas/github/otus-cpp-homework2/lib.cpp
+CMakeFiles/ip_filter_lib.dir/lib.cpp.o: /home/ilyas/OTUS/otus-cpp-homework2/lib.cpp
 CMakeFiles/ip_filter_lib.dir/lib.cpp.o: CMakeFiles/ip_filter_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyas/github/otus-cpp-homework2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ip_filter_lib.dir/lib.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ip_filter_lib.dir/lib.cpp.o -MF CMakeFiles/ip_filter_lib.dir/lib.cpp.o.d -o CMakeFiles/ip_filter_lib.dir/lib.cpp.o -c /home/ilyas/github/otus-cpp-homework2/lib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ilyas/OTUS/otus-cpp-homework2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ip_filter_lib.dir/lib.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ip_filter_lib.dir/lib.cpp.o -MF CMakeFiles/ip_filter_lib.dir/lib.cpp.o.d -o CMakeFiles/ip_filter_lib.dir/lib.cpp.o -c /home/ilyas/OTUS/otus-cpp-homework2/lib.cpp
 
 CMakeFiles/ip_filter_lib.dir/lib.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ip_filter_lib.dir/lib.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyas/github/otus-cpp-homework2/lib.cpp > CMakeFiles/ip_filter_lib.dir/lib.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ilyas/OTUS/otus-cpp-homework2/lib.cpp > CMakeFiles/ip_filter_lib.dir/lib.cpp.i
 
 CMakeFiles/ip_filter_lib.dir/lib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ip_filter_lib.dir/lib.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyas/github/otus-cpp-homework2/lib.cpp -o CMakeFiles/ip_filter_lib.dir/lib.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ilyas/OTUS/otus-cpp-homework2/lib.cpp -o CMakeFiles/ip_filter_lib.dir/lib.cpp.s
 
 # Object files for target ip_filter_lib
 ip_filter_lib_OBJECTS = \
@@ -96,7 +96,7 @@ ip_filter_lib_EXTERNAL_OBJECTS =
 libip_filter_lib.a: CMakeFiles/ip_filter_lib.dir/lib.cpp.o
 libip_filter_lib.a: CMakeFiles/ip_filter_lib.dir/build.make
 libip_filter_lib.a: CMakeFiles/ip_filter_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ilyas/github/otus-cpp-homework2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libip_filter_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ilyas/OTUS/otus-cpp-homework2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libip_filter_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/ip_filter_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ip_filter_lib.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/ip_filter_lib.dir/clean:
 .PHONY : CMakeFiles/ip_filter_lib.dir/clean
 
 CMakeFiles/ip_filter_lib.dir/depend:
-	cd /home/ilyas/github/otus-cpp-homework2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ilyas/github/otus-cpp-homework2 /home/ilyas/github/otus-cpp-homework2 /home/ilyas/github/otus-cpp-homework2/build /home/ilyas/github/otus-cpp-homework2/build /home/ilyas/github/otus-cpp-homework2/build/CMakeFiles/ip_filter_lib.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ilyas/OTUS/otus-cpp-homework2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ilyas/OTUS/otus-cpp-homework2 /home/ilyas/OTUS/otus-cpp-homework2 /home/ilyas/OTUS/otus-cpp-homework2/build /home/ilyas/OTUS/otus-cpp-homework2/build /home/ilyas/OTUS/otus-cpp-homework2/build/CMakeFiles/ip_filter_lib.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ip_filter_lib.dir/depend
 
