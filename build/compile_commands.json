@@ -1,20 +1,44 @@
 [
 {
-  "directory": "/home/ilyas/github/otus-cpp-homework2/build",
-  "command": "/usr/bin/g++-14 -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -pedantic -Werror -o CMakeFiles/ip_filter.dir/main.cpp.o -c /home/ilyas/github/otus-cpp-homework2/main.cpp",
-  "file": "/home/ilyas/github/otus-cpp-homework2/main.cpp",
-  "output": "CMakeFiles/ip_filter.dir/main.cpp.o"
-},
-{
-  "directory": "/home/ilyas/github/otus-cpp-homework2/build",
-  "command": "/usr/bin/g++-14 -I/home/ilyas/github/otus-cpp-homework2/build -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -pedantic -Werror -o CMakeFiles/ip_filter_lib.dir/lib.cpp.o -c /home/ilyas/github/otus-cpp-homework2/lib.cpp",
-  "file": "/home/ilyas/github/otus-cpp-homework2/lib.cpp",
+  "directory": "/home/ilyas/OTUS/otus-cpp-homework2/build",
+  "command": "/usr/bin/g++  -I/home/ilyas/OTUS/otus-cpp-homework2/build -g -std=gnu++17 -Wall -Wextra -pedantic -Werror -o CMakeFiles/ip_filter_lib.dir/lib.cpp.o -c /home/ilyas/OTUS/otus-cpp-homework2/lib.cpp",
+  "file": "/home/ilyas/OTUS/otus-cpp-homework2/lib.cpp",
   "output": "CMakeFiles/ip_filter_lib.dir/lib.cpp.o"
 },
 {
-  "directory": "/home/ilyas/github/otus-cpp-homework2/build",
-  "command": "/usr/bin/g++-14 -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB -O3 -DNDEBUG -std=gnu++17 -Wall -Wextra -pedantic -Werror -o CMakeFiles/ip_filter_test.dir/test_version.cpp.o -c /home/ilyas/github/otus-cpp-homework2/test_version.cpp",
-  "file": "/home/ilyas/github/otus-cpp-homework2/test_version.cpp",
-  "output": "CMakeFiles/ip_filter_test.dir/test_version.cpp.o"
+  "directory": "/home/ilyas/OTUS/otus-cpp-homework2/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -Wall -Wextra -pedantic -Werror -o CMakeFiles/ip_filter.dir/main.cpp.o -c /home/ilyas/OTUS/otus-cpp-homework2/main.cpp",
+  "file": "/home/ilyas/OTUS/otus-cpp-homework2/main.cpp",
+  "output": "CMakeFiles/ip_filter.dir/main.cpp.o"
+},
+{
+  "directory": "/home/ilyas/OTUS/otus-cpp-homework2/build",
+  "command": "/usr/bin/g++  -isystem /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest/include -isystem /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest -g -std=gnu++17 -Wall -Wextra -pedantic -Werror -o CMakeFiles/ip_filter_gtest.dir/gtest_version.cpp.o -c /home/ilyas/OTUS/otus-cpp-homework2/gtest_version.cpp",
+  "file": "/home/ilyas/OTUS/otus-cpp-homework2/gtest_version.cpp",
+  "output": "CMakeFiles/ip_filter_gtest.dir/gtest_version.cpp.o"
+},
+{
+  "directory": "/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/g++  -I/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googlemock/include -I/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googlemock -isystem /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest/include -isystem /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/g++  -isystem /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googlemock/include -isystem /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googlemock -isystem /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest/include -isystem /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/g++  -I/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest/include -I/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/g++  -isystem /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest/include -isystem /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest -g -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/home/ilyas/OTUS/otus-cpp-homework2/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
 }
 ]

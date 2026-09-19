@@ -61,13 +61,13 @@ if(WITH_GOOGLE_TEST)
     FetchContent_MakeAvailable(googletest)
 
     set_target_properties(ip_filter_gtest PROPERTIES
-        CXX_STANDARD 14
+        CXX_STANDARD 17
         CXX_STANDARD_REQUIRED ON
     )
     
     target_link_libraries(ip_filter_gtest
         GTest::gtest_main
-        ip_filter_google_lib
+        ip_filter_lib
     )
 endif()
 

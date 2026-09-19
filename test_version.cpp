@@ -32,7 +32,6 @@ BOOST_AUTO_TEST_CASE(test_valid_version) {
 	std::vector<std::string> s8{"111", "aaa", "111", "111"};
 	std::vector<std::string> s9{"111", "", "-111", "1a1"};
 	
-
 	BOOST_CHECK_THROW(new IP<size0>(normal), std::invalid_argument);
 	BOOST_CHECK_NO_THROW(new IP<size1>(normal));
 	BOOST_CHECK_NO_THROW(new IP<size2>(normal16));

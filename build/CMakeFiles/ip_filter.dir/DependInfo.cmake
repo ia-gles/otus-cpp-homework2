@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ilyas/github/otus-cpp-homework2/main.cpp" "CMakeFiles/ip_filter.dir/main.cpp.o" "gcc" "CMakeFiles/ip_filter.dir/main.cpp.o.d"
+  "/home/ilyas/OTUS/otus-cpp-homework2/main.cpp" "CMakeFiles/ip_filter.dir/main.cpp.o" "gcc" "CMakeFiles/ip_filter.dir/main.cpp.o.d"
   "" "ip_filter" "gcc" "CMakeFiles/ip_filter.dir/link.d"
   )
 

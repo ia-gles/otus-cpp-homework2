@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ilyas/github/otus-cpp-homework2
+CMAKE_SOURCE_DIR = /home/ilyas/OTUS/otus-cpp-homework2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ilyas/github/otus-cpp-homework2/build
+CMAKE_BINARY_DIR = /home/ilyas/OTUS/otus-cpp-homework2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ilyas/github/otus-cpp-homework2/build/CPackSourceConfig.cmake
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ilyas/OTUS/otus-cpp-homework2/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -117,7 +117,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\" \"gmock\" \"gtest\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -162,9 +162,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilyas/github/otus-cpp-homework2/build/CMakeFiles /home/ilyas/github/otus-cpp-homework2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilyas/OTUS/otus-cpp-homework2/build/CMakeFiles /home/ilyas/OTUS/otus-cpp-homework2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilyas/github/otus-cpp-homework2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ilyas/OTUS/otus-cpp-homework2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -218,17 +218,93 @@ ip_filter_lib/fast:
 .PHONY : ip_filter_lib/fast
 
 #=============================================================================
-# Target rules for targets named ip_filter_test
+# Target rules for targets named ip_filter_gtest
 
 # Build rule for target.
-ip_filter_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ip_filter_test
-.PHONY : ip_filter_test
+ip_filter_gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ip_filter_gtest
+.PHONY : ip_filter_gtest
 
 # fast build rule for target.
-ip_filter_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ip_filter_test.dir/build.make CMakeFiles/ip_filter_test.dir/build
-.PHONY : ip_filter_test/fast
+ip_filter_gtest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ip_filter_gtest.dir/build.make CMakeFiles/ip_filter_gtest.dir/build
+.PHONY : ip_filter_gtest/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+gtest_version.o: gtest_version.cpp.o
+.PHONY : gtest_version.o
+
+# target to build an object file
+gtest_version.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ip_filter_gtest.dir/build.make CMakeFiles/ip_filter_gtest.dir/gtest_version.cpp.o
+.PHONY : gtest_version.cpp.o
+
+gtest_version.i: gtest_version.cpp.i
+.PHONY : gtest_version.i
+
+# target to preprocess a source file
+gtest_version.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ip_filter_gtest.dir/build.make CMakeFiles/ip_filter_gtest.dir/gtest_version.cpp.i
+.PHONY : gtest_version.cpp.i
+
+gtest_version.s: gtest_version.cpp.s
+.PHONY : gtest_version.s
+
+# target to generate assembly for a file
+gtest_version.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ip_filter_gtest.dir/build.make CMakeFiles/ip_filter_gtest.dir/gtest_version.cpp.s
+.PHONY : gtest_version.cpp.s
 
 lib.o: lib.cpp.o
 .PHONY : lib.o
@@ -278,30 +354,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ip_filter.dir/build.make CMakeFiles/ip_filter.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-test_version.o: test_version.cpp.o
-.PHONY : test_version.o
-
-# target to build an object file
-test_version.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ip_filter_test.dir/build.make CMakeFiles/ip_filter_test.dir/test_version.cpp.o
-.PHONY : test_version.cpp.o
-
-test_version.i: test_version.cpp.i
-.PHONY : test_version.i
-
-# target to preprocess a source file
-test_version.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ip_filter_test.dir/build.make CMakeFiles/ip_filter_test.dir/test_version.cpp.i
-.PHONY : test_version.cpp.i
-
-test_version.s: test_version.cpp.s
-.PHONY : test_version.s
-
-# target to generate assembly for a file
-test_version.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ip_filter_test.dir/build.make CMakeFiles/ip_filter_test.dir/test_version.cpp.s
-.PHONY : test_version.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -317,18 +369,22 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... gmock"
+	@echo "... gmock_main"
+	@echo "... gtest"
+	@echo "... gtest_main"
 	@echo "... ip_filter"
+	@echo "... ip_filter_gtest"
 	@echo "... ip_filter_lib"
-	@echo "... ip_filter_test"
+	@echo "... gtest_version.o"
+	@echo "... gtest_version.i"
+	@echo "... gtest_version.s"
 	@echo "... lib.o"
 	@echo "... lib.i"
 	@echo "... lib.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... test_version.o"
-	@echo "... test_version.i"
-	@echo "... test_version.s"
 .PHONY : help
 
 
