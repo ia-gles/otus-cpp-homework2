@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20260919-1642-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.31.6"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="debian-13-GUI"
+	OSRelease="6.12.107+deb13-amd64"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Debian 6.12.107-1 (2026-08-29)"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="60"
+	ModelName="Intel(R) Core(TM) i5-4440 CPU @ 3.10GHz"
+	ProcessorCacheSize="6144"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="2499"
+	TotalPhysicalMemory="15999"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="3098.2"
+	>
+	<Testing>
+		<StartDateTime>Sep 19 19:43 MSK</StartDateTime>
+		<StartTestTime>1789836237</StartTestTime>
+		<TestList/>
+		<EndDateTime>Sep 19 19:43 MSK</EndDateTime>
+		<EndTestTime>1789836237</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
