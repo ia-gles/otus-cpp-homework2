@@ -1,0 +1,5 @@
+if(EXISTS "/home/ilyas/OTUS/otus-cpp-homework2/build/ip_filter_gtest[1]_tests.cmake")
+  include("/home/ilyas/OTUS/otus-cpp-homework2/build/ip_filter_gtest[1]_tests.cmake")
+else()
+  add_test(ip_filter_gtest_NOT_BUILT ip_filter_gtest_NOT_BUILT)
+endif()
